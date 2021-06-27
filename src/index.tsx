@@ -2,12 +2,16 @@ import { StrictMode } from 'react';
 import { render } from 'react-dom';
 
 import './index.scss';
+import { ChakraProvider } from '@chakra-ui/react';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 render(
   <StrictMode>
-    <App />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')
 );
