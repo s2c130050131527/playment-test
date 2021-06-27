@@ -9,4 +9,4 @@ export const TriggerContext = createContext<TriggerVal>({
   setTrigger: () => {},
 });
 
-export const useGlobalContext = () => useContext(TriggerContext);
+export const useGlobalContext = (): TriggerVal => useContext(TriggerContext);

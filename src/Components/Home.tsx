@@ -9,12 +9,7 @@ const Home: React.FC = () => (
       <Header />
     </div>
     <div className={styles.mainBody}>
-      <div className={styles.editor}>
-        <Editor />
-      </div>
-      <div className={styles.output}>
-        <Output />
-      </div>
+      <Editor />
     </div>
   </div>
 );
